@@ -1,0 +1,35 @@
+.row {
+    color: white;
+    margin-left: 20px;
+}
+
+.row_posters {
+display: flex;  /*wyswietla obok siebie a nie pod soba*/
+overflow-y: hidden;
+overflow-x: scroll;
+padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none; /*nie wyswietla paska przesuwania*/
+}
+
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
+
+.row__poster:hover {
+transform: scale(1.10); /*po najechaniu mysza obrazek sie powieksza*/
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.20); 
+    }
